@@ -1,0 +1,280 @@
+body{
+    margin: 1px;
+    padding:0px;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    min-height: 480px;
+    height: 80vh;
+    max-height: 560px;
+    box-sizing: border-box;
+    transform: skewY(8deg);
+    transform-origin: 100% center;
+    padding: 48px 48px 32px;
+    overflow: hidden;
+    z-index: 1;
+}
+.background-sky {
+    background: linear-gradient(145deg,#0d47a1,#42a5f5);
+    color: #000000de;
+     z-index: 1;
+}
+.main_img{
+    z-index:11;
+    position: absolute;
+    height:398px;
+    width:400px;
+    margin-left:320px;
+    margin-top:7px;
+}
+.divimg{
+    position: relative;
+    margin-top: -2px;
+    margin-left:20px;
+    top: 12px;
+    height: 40px;
+    cursor: pointer;
+}
+.menu{
+    display: flex;
+    color: white;
+}
+.menu_name{
+    font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    margin-top:9px;
+    padding:15px;
+    cursor: pointer;
+}
+.menu_name:hover{
+   background: rgba(255,255,255,.15);
+}
+.menu_search{
+    font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    margin-top:15px;
+    margin-left:600px;
+    padding: 3px 15px;
+    background-color:white;
+    border: 1px solid white;
+    border-radius:15px;
+    z-index:6;
+    width:160px;
+    height:21px;
+    text-align: left;
+}
+.searchbar{
+    position: flex;
+    border:1px solid black;
+    padding:4px 9px;
+    color:black;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-left:80px;
+}
+.menu_right{
+    font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    margin-top:2px;
+    margin-left:25px;
+    font-size: 22px;
+    padding:15px;
+    cursor: pointer;
+}
+.menu_right:hover{
+   background: rgba(255,255,255,.15);
+}
+.vertical {
+      border-right: 1px solid white;
+      height: 20px;
+      position:flex;
+}
+.menuright{
+ font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    margin-top:0px;
+    margin-left:1px;
+    font-size:28px;
+    padding:15px;
+    cursor: pointer;
+}
+.divicon{
+    display: none;
+    position: relative;
+    margin-top: -2px;
+    margin-left:20px;
+    top: 12px;
+    height: 40px;
+    cursor: pointer;
+}
+.github{
+   font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    margin-top:0px;
+    margin-left:1px;
+    font-size:31px;
+    padding:13px;
+    cursor: pointer; 
+}
+.youtube{
+font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    margin-top:0px;
+    margin-left:1px;
+    font-size:31px;
+    padding:13px;
+    cursor: pointer; 
+}
+.tryangular{
+    background-color:white;
+    border:1px solid white;
+    border-radius:25px;
+    margin-left:730px;
+    margin-top:240px;
+    width:150px;
+    z-index:13;
+    position: absolute;
+    font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    padding: 10px;
+    color: #1976d2;
+    box-shadow: 0 2px 5px #00000080;
+    line-height: 23px;
+}
+.tryangular:hover{
+    box-shadow: 0 2px 11px #00000080;
+}
+.lastmenu{
+    padding: 0px 70px;
+}
+.text1{
+    z-index:12;
+    position: absolute;
+    margin-left:730px;
+    margin-top:110px;
+    font-size:37px;
+    color: white;
+    font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    line-height:43px;
+}
+.text2{
+    margin-top:490px;
+    color: black;
+    font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-size:31px;
+    font-weight: 500;
+    margin-left:290px;
+}
+.text3{
+    display: flex;
+    margin-top:50px;
+    color: #1976d2;
+    font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-size:18px;
+    font-weight: 500;
+    margin-left:230px;
+}
+@media screen and (max-width:600px) {
+    .menu{
+    display: flex;
+    color: white;
+}
+  .menu_name{
+    display: none;
+  }
+  .menu_search{
+    display: flex;
+     margin-top:15px;
+    margin-left:50px;
+/*    padding: 3px 15px;*/
+    background-color:white;
+    border: 1px solid white;
+    border-radius:15px;
+    z-index:6;
+    width:160px;
+    height:21px;
+    text-align: left;
+}
+
+  .searchbar{
+    margin-top: 0px ;
+    border:1px solid black;
+/*    padding:1px 6px;*/
+    color:black;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-left:80px;
+}
+.menuright{
+    display: none;
+}
+.youtube{
+    display: none;
+}
+.divimg{
+    display: none;
+
+}
+.divicon{
+    display: flex;
+    position: relative;
+    margin-top:-2px;
+    font-size:22px !important;
+    margin-left:20px;
+    top: 12px;
+    height:80px;
+    cursor: pointer;
+}
+.main_img{
+    z-index:11;
+    position: absolute;
+    height:218px;
+    width:250px;
+    margin-left:65px;
+    margin-top:7px;
+}
+.text1{
+    z-index:12;
+    position: absolute;
+    margin-left:50px;
+    margin-top:230px;
+    font-size:37px;
+    color: white;
+    font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    line-height:43px;
+}
+.tryangular{
+    background-color:white;
+    border:1px solid white;
+    border-radius:25px;
+    margin-left:110px;
+    margin-top:340px;
+    width:150px;
+    z-index:13;
+    position: absolute;
+    font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    padding: 10px;
+    color: #1976d2;
+    box-shadow: 0 2px 5px #00000080;
+    line-height: 23px;
+}
+.text2{
+    margin-top:490px;
+    color: black;
+    font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-size:21px;
+    font-weight: 500;
+    margin-left:40px;
+}
+.text3{
+    display: block;
+    margin-top:40px;
+    color: #1976d2;
+    font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-size:18px;
+    font-weight: 500;
+    margin-left:30px;
+}
+.lastmenu{
+    padding: 0px 70px;
+      margin-bottom:20px;
+}
+}
